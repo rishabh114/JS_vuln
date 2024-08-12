@@ -1,0 +1,15 @@
+{
+    "name": "angular-vulnerable-project",
+    "version": "1.0.0",
+    "dependencies": {
+      "@angular/core": "6.1.10",
+      "@angular/common": "6.1.10",
+      "@angular/compiler": "6.1.10",
+      "@angular/platform-browser": "6.1.10",
+      "@angular/platform-browser-dynamic": "6.1.10",
+      "@angular/router": "6.1.10",
+      "rxjs": "6.2.2",
+      "zone.js": "0.8.26"
+    }
+  }
+  
