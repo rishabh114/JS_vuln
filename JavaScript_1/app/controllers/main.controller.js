@@ -1,6 +1,5 @@
-angular.module('myApp').controller('XSSController', function($sce) {
-  var vm = this;
-  // Vulnerable to XSS
-  vm.userInput = "<script>alert('XSS');</script>";
-  vm.trustedInput = $sce.trustAsHtml(vm.userInput);
-});
+angular.module('myApp').controller('MainController', function() {
+    var vm = this;
+    vm.message = "Welcome to the main page!";
+  });
+  
