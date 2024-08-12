@@ -1,6 +1,6 @@
 angular.module('myApp').controller('XSSController', function($sce) {
-    var vm = this;
-    vm.userInput = "<img src=x onerror=alert('XSS')>";
-    vm.trustedInput = $sce.trustAsHtml(vm.userInput); // Vulnerable to XSS
-  });
-  
+  var vm = this;
+  // Vulnerable to XSS
+  vm.userInput = "<script>alert('XSS');</script>";
+  vm.trustedInput = $sce.trustAsHtml(vm.userInput);
+});
